@@ -7,28 +7,28 @@
 </head>
 <body>
     <div>
-        <h1>Avaliação de Bem-Estar dos DEVs</h1>
-        <p>Complete suas informaçães</p>
+        <h1 id="titulo">Cadastro de DEVs</h1>
+        <p id="subtitulo">Complete suas informaçães</p>
         <br>
     </div>
     <form>
-        <fieldset>
-            <div>
-                <label for="">Name</label>
-                <input type="text" name="nome" id="nome">           
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>           
             </div>
-            <div>
-                <label for="">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
-            <div>
-                <label for="">Email</label>
-                <input type="email" name="Email" id="email">
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
             </div>
             
-            <div>
-                <label for="">Qual departamento você é?</label>
+            <div class="campo">
+                <label for=""><strong>Qual departamento você é?</strong></label>
                 <label for="">
                     <input type="radio" name="devweb" value="Frontend" checked>Front-end
                 </label>
@@ -40,15 +40,40 @@
                 </label>
             </div>
             <br>  
-            <div>
-                <label for="">Qual nivel de senioridade?</label>
+            <div class="campo">
+                <label for=""><strong>Qual nivel de senioridade?</strong></label>
                 <select name="" id="senioridade">
+                    <option selected disabled value="">Escolha</option>
                     <option value="">Junior</option>
                     <option value="">Pleno</option>
                     <option value="">Sênior</option>
                 </select>
             </div>
-               
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for=""><strong>selecione as tecnologias que utiliza:</strong></label>
+                    <br>
+                    <br>
+                       <input type="checkbox" id="tecnologia_1" name="tecnologia_1" value="HTML">
+                    <label for="tecnologia_1">HTML</label>
+                       <input type="checkbox" id="tecnologia_2" name="tecnologia_2" value="CSS">
+                    <label for="tecnologia_2">CSS</label>
+                       <input type="checkbox" id="tecnologia_3" name="tecnologia_3" value="JavaScrip">
+                    <label for="tecnologia_3">JavaScrip</label>
+                       <input type="checkbox" id="tecnologia_4" name="tecnologia_4" value="PHP">
+                    <label for="tecnologia_4">PHP</label>
+                       <input type="checkbox" id="tecnologia_5" name="tecnologia_5" value="C#">
+                    <label for="tecnologia_5">C#</label>
+                       <input type="checkbox" id="tecnologia_6" name="tecnologia_6" value="Java">
+                    <label for="tecnologia_6">Java</label>
+                </div>
+            </fieldset>
+            <div class="campo"  >
+                <br>
+                <label for="">Conte um pouco de sua experiência:</label>
+                <textarea rows="6" style="width: 400px; height: 30px;" name="experiencia" id="experiencia"></textarea>
+            </div>               
+            <button type="submit">Concluido</button>
     </form>
 </body>
 </html>
