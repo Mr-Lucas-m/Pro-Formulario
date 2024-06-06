@@ -6,6 +6,49 @@
     <title>Form</title>
 </head>
 <body>
-    
+    <div>
+        <h1>Avaliação de Bem-Estar dos DEVs</h1>
+        <p>Complete suas informaçães</p>
+        <br>
+    </div>
+    <form>
+        <fieldset>
+            <div>
+                <label for="">Name</label>
+                <input type="text" name="nome" id="nome">           
+            </div>
+            <div>
+                <label for="">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="Email" id="email">
+            </div>
+            
+            <div>
+                <label for="">Qual departamento você é?</label>
+                <label for="">
+                    <input type="radio" name="devweb" value="Frontend" checked>Front-end
+                </label>
+                <label for="">
+                    <input type="radio" name="devweb" value="Backend">Back-end
+                </label>
+                <label for="">
+                    <input type="radio" name="devweb" value="FullStack">FullStack
+                </label>
+            </div>
+            <br>  
+            <div>
+                <label for="">Qual nivel de senioridade?</label>
+                <select name="" id="senioridade">
+                    <option value="">Junior</option>
+                    <option value="">Pleno</option>
+                    <option value="">Sênior</option>
+                </select>
+            </div>
+               
+    </form>
 </body>
 </html>
