@@ -7,3 +7,38 @@
    color: #380b63;
    margin-left: 7%;
 }
+#subtitulo{
+    font-family: sans-serif;
+    color: #380b63;
+    margin-left: 20%;
+}
+fieldset{
+    border: 0;
+}
+body{
+    background-color: #f0f8ff;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #59429d;
+    margin-left: 350px;
+    margin-top: 15px;
+    justify-content: center;
+}
+input, select, textarea, button{
+    border-radius: 5px;
+}
+.compo{
+    margin-bottom: 12px;
+}
+.compo label{
+    margin-bottom: 3.2px;
+    color: #59429d;
+    display: block;
+}
+fieldset.grupo .compo{
+    float: left;
+    margin-right: 1em;
+}
+.compo input[type="text"],.compo input[type="email"], .compo select, .compo textarea{
+    padding: 3.2px;
+}
